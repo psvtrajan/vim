@@ -11,8 +11,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
 "colorscheme peachpuff
-set shiftwidth=4
-set tabstop=4
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -20,16 +19,10 @@ Bundle "myusuf3/numbers.vim"
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 set number
-"set tags=~/Desktop/3_CscopeCtags/tags
-"execute pathogen#infect()
 filetype plugin indent on
+
 map <F5> :!cscope -Rb<CR> :cs reset<CR><CR>
-"set csprg=/usr/bin/cscope
-"set cscopequickfix=s-,c-,d-,i-,t-,e-
-"set cst
-"set csverb
 map <F9> :cs add ./cscope.out<CR>
-"set notimeout
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight search results
@@ -48,14 +41,14 @@ set showmatch
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
-set expandtab
+"set expandtab
 
 " Be smart when using tabs ;)
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+"set shiftwidth=4
+"set tabstop=4
 
 set ai "Auto indent
 set si "Smart indent
